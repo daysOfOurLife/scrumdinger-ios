@@ -8,7 +8,6 @@
 import XCTest
 
 final class ScrumdingerUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
