@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct MeetingView: View {
-    
     // MARK: Body
-    
+
     var body: some View {
         VStack {
             progressBar
-            
+
             Spacer()
-            
+
             progressCircle
-            
+
             Spacer()
-            
+
             speakerInfoFooter
         }
     }
-    
+
     // MARK: Subviews
-    
+
     private var progressBar: some View {
         VStack {
             ProgressView(value: 15, total: 100)
@@ -36,9 +35,9 @@ struct MeetingView: View {
                         .font(.caption)
                     Label("300", systemImage: "hourglass.tophalf.fill")
                 }
-                
+
                 Spacer()
-                
+
                 VStack(alignment: .trailing) {
                     Text("Seconds Remaining")
                         .font(.caption)
@@ -50,18 +49,18 @@ struct MeetingView: View {
             .accessibilityValue("10 minutes remaining")
         }
     }
-    
+
     private var progressCircle: some View {
         Circle()
             .stroke(lineWidth: 24)
     }
-    
+
     private var speakerInfoFooter: some View {
         HStack {
             Text("Speaker 1 of 3")
-            
+
             Spacer()
-            
+
             Button {
                 // TODO: Do something
             } label: {
