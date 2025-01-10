@@ -20,7 +20,7 @@ extension DailyScrum {
                 "Cathy",
                 "Daisy",
                 "Simon",
-                "Jonathan"
+                "Jonathan",
             ],
             lengthInMinutes: 10,
             theme: .yellow
@@ -32,7 +32,7 @@ extension DailyScrum {
                 "Gray",
                 "Euna",
                 "Luis",
-                "Darla"
+                "Darla",
             ],
             lengthInMinutes: 5,
             theme: .orange
@@ -49,7 +49,7 @@ extension DailyScrum {
                 "Aga",
                 "Chad",
                 "Jenn",
-                "Sarah"
+                "Sarah",
             ],
             lengthInMinutes: 5,
             theme: .poppy
