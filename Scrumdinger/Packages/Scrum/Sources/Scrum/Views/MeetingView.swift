@@ -7,10 +7,15 @@
 
 import SwiftUI
 
-struct MeetingView: View {
+public struct MeetingView: View {
+    
+    // MARK: Initializer
+    
+    public init() {}
+    
     // MARK: Body
 
-    var body: some View {
+    public var body: some View {
         VStack {
             progressBar
 

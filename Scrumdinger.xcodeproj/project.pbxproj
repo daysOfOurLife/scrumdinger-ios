@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A5E12BB72D3F717A00E51FF6 /* Scrum in Frameworks */ = {isa = PBXBuildFile; productRef = A5E12BB62D3F717A00E51FF6 /* Scrum */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A5BCA2772D30B93C00F92078 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,20 +33,24 @@
 		A5BCA2802D30B93C00F92078 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A5F81DDE2D3F6D0300C19740 /* Exceptions for "Scrumdinger" folder in "Scrumdinger" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Assets.xcassets,
+				"Resources/Preview Content/Preview Assets.xcassets",
+			);
+			target = A5BCA2652D30B93B00F92078 /* Scrumdinger */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A5BCA2682D30B93B00F92078 /* Scrumdinger */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A5F81DDE2D3F6D0300C19740 /* Exceptions for "Scrumdinger" folder in "Scrumdinger" target */,
+			);
 			path = Scrumdinger;
-			sourceTree = "<group>";
-		};
-		A5BCA2792D30B93C00F92078 /* ScrumdingerTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScrumdingerTests;
-			sourceTree = "<group>";
-		};
-		A5BCA2832D30B93C00F92078 /* ScrumdingerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScrumdingerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E12BB72D3F717A00E51FF6 /* Scrum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				A5BCA2682D30B93B00F92078 /* Scrumdinger */,
-				A5BCA2792D30B93C00F92078 /* ScrumdingerTests */,
-				A5BCA2832D30B93C00F92078 /* ScrumdingerUITests */,
+				A5F81DF82D3F6D9000C19740 /* Frameworks */,
 				A5BCA2672D30B93B00F92078 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				A5BCA2802D30B93C00F92078 /* ScrumdingerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A5F81DF82D3F6D9000C19740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,7 @@
 			);
 			name = Scrumdinger;
 			packageProductDependencies = (
+				A5E12BB62D3F717A00E51FF6 /* Scrum */,
 			);
 			productName = Scrumdinger;
 			productReference = A5BCA2662D30B93B00F92078 /* Scrumdinger.app */;
@@ -129,9 +145,6 @@
 			);
 			dependencies = (
 				A5BCA2782D30B93C00F92078 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A5BCA2792D30B93C00F92078 /* ScrumdingerTests */,
 			);
 			name = ScrumdingerTests;
 			packageProductDependencies = (
@@ -152,9 +165,6 @@
 			);
 			dependencies = (
 				A5BCA2822D30B93C00F92078 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A5BCA2832D30B93C00F92078 /* ScrumdingerUITests */,
 			);
 			name = ScrumdingerUITests;
 			packageProductDependencies = (
@@ -395,7 +405,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = NGFLMNMVG7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = NGFLMNMVG7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -558,6 +568,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5E12BB62D3F717A00E51FF6 /* Scrum */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Scrum;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5BCA25E2D30B93B00F92078 /* Project object */;
 }
